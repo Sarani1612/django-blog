@@ -4,13 +4,13 @@
 <div class="row">
 	<div class="col-md-2 col-sm-3 text-center">
 		<a href="#" class="story-img">
-			<img src="/media/img/profile.jpg" class="img-circle">
+			<img src="{{ MEDIA_URL }}img/profile.jpg" class="img-circle">
 		</a>
 			<p><span class="boldtext">Author: </span> Neil</p>
 	</div>
 	<div class="col-sm-10 col-md-9">
 		{% if post.image %}
-		<img src="/media/{{ post.image }}" class="img-blogpost">
+		<img src="{{ MEDIA_URL }}{{ post.image }}" class="img-blogpost">
         {% endif %}
 		<h3>{{ post.title }}</h3>
 		<div class="row">
